@@ -20,6 +20,29 @@
 	box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+	.weather-location-input-container div.weather-location--input__city-state,
+	.weather-location-input-container div.weather-location--input__zip-code {
+		max-width: 300px;
+		text-align: left;
+	}
+
+	.weather-location--input {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.weather-location-input-container label {
+		display: block;
+		text-align: left;
+		margin: 10px 0 3px 0;
+	}
+
+	.weather-location-input-container label:first-of-type {
+		margin-top: 0;
+	}
+}
+
 .weather-location-input-container form button {
 	border: none;
 	border-radius: 5px;

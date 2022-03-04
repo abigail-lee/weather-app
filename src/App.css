@@ -5,6 +5,18 @@
   scroll-snap-type:  y mandatory;
 }
 
+@media screen and (max-width:1024px) {
+  .App {
+    scroll-snap-type:none;
+  }
+
+  main {
+    scroll-snap-align: none;
+    min-height: none;
+    height: auto;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

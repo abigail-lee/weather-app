@@ -30,6 +30,40 @@
 	text-align: left;
 }
 
+@media (max-width: 1024px) {
+	.weather-card {
+		margin: 0 5px;
+	}
+
+	.hourly-card-container {
+		max-width: 98%;
+		max-height: 60vh;
+		overflow: scroll;
+		padding: 0;
+	}
+
+	.hourly-card-container h3 {
+		display: block;
+		position: sticky;
+		top: 0px;
+		margin: 0;
+		padding-top: 1em;
+		box-sizing: border-box;
+		text-align: center;
+		background: linear-gradient(to top, transparent, #ddd 30%);
+	}
+
+	.hourly-card-container .weather-card-container {
+		flex-wrap: wrap;
+	}
+
+	.hourly-card-container .weather-card-container .weather-card {
+		margin: 5px 0;
+		border: 0;
+		border-bottom: 1px solid #aaa;
+	}
+}
+
 .hourly-card-container h3 {
 	color: #b8336a;
 }
