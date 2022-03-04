@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type:  y mandatory;
 }
 
 .App-logo {
@@ -22,17 +25,78 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /*scroll-snap-align: start;*/
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  position: sticky;
+  top: 5vh;
+  z-index: 3;
+  background-color: #7d8cc4;
+  min-height: 90vh;
+  padding: 10px 30px 30px 30px;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+}
+
+section span {
+ /*position: absolute;*/
+ top: 10px; 
+ color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 1.36px;
+ display: inline-flex;
+ align-items: center;
+ box-sizing: border-box;
+}
+
+main {
+  min-height: 90vh;
+  background-color: #726da8;
+  padding: 15px 30px 30px 30px;
+  position: sticky;
+  top: 10vh;
+  z-index: 4;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+}
+
+main h2 {
+  color: #eee;
+  font-size: 1.5rem;
+  letter-spacing: 0.36px;
+}
+
+main span {
+  top: 10px;
+  color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 1.36px;
+ display: inline-flex;
+ align-items: center;
+ box-sizing: border-box;
+}
+
+main > span:before,
+main > span:after,
+section > span:before,
+section > span:after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+main .weather-component-container,
+section .weather-location-container {
+  margin: 50px auto;
 }

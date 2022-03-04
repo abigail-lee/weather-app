@@ -1,0 +1,39 @@
+.weather-location-input-container {
+	
+}
+
+.weather-location-input-container label {
+	font-size: 0.875rem;
+	margin:0  7px;
+	color: #333;
+}
+
+.weather-location-input-container div.weather-location--input__zip-code,
+.weather-location-input-container div.weather-location--input__city-state {
+	display: block;
+	max-width: 500px;
+	border-radius: 10px;
+	margin: 10px auto;
+	background: rgba(255,255,255,0.25);
+	border: 1px solid #726da8;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.weather-location-input-container form button {
+	border: none;
+	border-radius: 5px;
+	background: #726da8;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 7px 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	transition: 0.25s ease all;
+}
+
+.weather-location-input-container form button:hover {
+	cursor: pointer;
+	background: darkviolet;
+	transform: translateY(-5px);
+}

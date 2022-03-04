@@ -1,0 +1,23 @@
+.weather-location-results--entry__option {
+		margin: 5px 0;
+		text-transform: none;
+		letter-spacing: 0.08;
+		font-size: 1.125rem;
+		transition: 0.1s ease all;
+		display: inline-block;
+}
+
+.weather-location-results--entry__option:hover,
+.weather-location-results--entry__option.active {
+		font-weight: 700;
+		text-shadow: 0 3px 6px rgba(16,16,16,0.16);
+}
+
+.weather-location-results--entry__option:hover {
+	cursor: pointer;
+	color: aliceblue;
+}
+
+.weather-location-results--entry__option.active {
+	pointer-events: none;
+}
